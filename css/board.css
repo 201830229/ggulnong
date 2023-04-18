@@ -18,4 +18,4 @@ tbody tr:hover{background:#f3f3f3}
 
 /*글쓰기 버튼*/
 .write-btn{float: left;margin: 20px;height: 30px;}
-.write-btn button{width: 60px;height: 100%;background: #222222;outline: none;color: white;}
+.write-btn button{width: 60px;height: 100%;background: #222222;outline: none;color: white;cursor: pointer;}

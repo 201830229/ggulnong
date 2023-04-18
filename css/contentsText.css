@@ -37,12 +37,12 @@
 .box-select{text-align: right;margin-bottom: 40px}
 .box-select button{float: none;text-align: center;
 background-color: #fff;border: 1px solid #747474;border-radius: 15%;color: #222222;
-width: 50px; height: 30px;font-weight: bold;margin: 0 3px;}
+width: 50px; height: 30px;font-weight: bold;margin: 0 3px;cursor: pointer;}
 .box-select button:hover{background-color:#FBB63E;color:#fff;border-radius: 15%;}
 
 
 /*목록 버튼*/
 .list-btn{float: right;margin: 15px 0 0;height: 30px;}
-.list-btn button{width: 50px;height: 100%;background: #222222;outline: none;color: white;}
+.list-btn button{width: 50px;height: 100%;background: #222222;outline: none;color: white;cursor: pointer;}
 
 .paging{float: left;width: 100%;text-align: center;}

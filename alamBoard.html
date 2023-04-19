@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/container.css" type="text/css" />
     <link rel="stylesheet" href="css/side.css" type="text/css" />
     <link rel="stylesheet" href="css/board.css" type="text/css" />
@@ -14,9 +15,100 @@
     <style>*{font-family: 'Nanum Gothic', sans-serif;}</style>
 </head>
 <body>
-<div class="header">
-    <h1>HEADER</h1>
-</div>
+<header>
+    <div class="login-bar">
+        <a href="../html/login.html">로그인 / 회원가입</a>
+    </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/logo.PNG" alt="logo"><h1>꿀농</h1></a>   
+        </div>
+            <div class="rightHeader">
+                <div class="search-bar">
+                    <form>
+                        <input type="text" class="input-search" placeholder="검색어를 입력하세요." />
+                        <input type="submit" class="input-search-submit" value="" />
+                    </form>
+                </div>
+            </div>
+    <nav>    
+    <div class="nav-fir">
+        <!------------네비 삼단버튼-------------->
+
+        <div class="nav-sidebar-box">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="sidebar">
+                <ul class="sidebar-ul">
+                    <li><a href="#">알림/소식</a>
+                        <ul class="sidebar-li">
+                            <li><a href="html/content.html">공지사항</a></li>
+                            <li><a href="#2">뉴스소식</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#2">농기구</a>
+                        <ul class="sidebar-li">
+                            <li><a href="#">기구 대여</a></li>
+                            <li class="desc"><a href="#1">-사용법</a></li>                                
+                        </ul>
+                    </li>
+                    <li><a href="#3">식물·재배법</a>
+                        <ul class="sidebar-li">
+                            <li class="desc"><a href="#1">-농작물 관련</a></li>
+                            <li class="desc"><a href="#1">-반려 식물 관련</a></li>
+                            <li><a href="#2">밭 관리법</a></li>
+                            <li class="desc"><a href="#1">-텃밭 관련</a></li>
+                            <li class="desc"><a href="#1">-화분 관련</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#6">이용안내</a>
+                        <ul class="sidebar-li">
+                            <li><a href="#1">개인정보처리방침</a></li>
+                            <li><a href="#">사이트 이용안내</a></li>
+                            <li class="desc"><a href="#1">-신고방법</a></li>
+                            <li class="desc"><a href="#1">-후원방법</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>			
+        </div>
+    </div>
+        <!------------네비 메뉴나열-------------->
+        
+        <div class="nav-left">
+            <ul class="nav-menu">
+                <li><a href="#">알림/소식</a>
+                    <ul class="submenu">
+                        <li><a href="html/content.html">공지사항</a></li>
+                        <li><a href="#2">뉴스소식</a></li>
+                    </ul>
+                </li>
+                <li><a href="#2">농기구</a>
+                    <ul class="submenu">
+                        <li><a href="#">기구 대여</a></li>
+                        <li><a href="#1">사용법</a></li>
+                    </ul>
+                </li>
+                <li><a href="#3">식물·재배법</a>
+                    <ul class="submenu">
+                        <li><a href="#1">식물 재배법</a></li>
+                        <li><a href="#2">밭 관리법</a></li>
+                    </ul>
+                </li>
+                <li><a href="#6">이용안내</a>
+                    <ul class="submenu">
+                        <li><a href="#1">개인정보처리방침</a></li>
+                        <li><a href="#">사이트 이용안내</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header><!--헤더 end-->
 
 <div class="container">
     <section class="box">
@@ -43,7 +135,7 @@
             </form>
 
             <div class="write-btn">
-                <button type="button" id="btn_write" class="btn_write" onclick="location.href='write.html'">글쓰기</button>
+                <button type="button" id="btn_write" class="btn_write" onclick="location.href='alamWrite.html'">글쓰기</button>
             </div><!--상단 end-->
 
             <div class="box-list">
@@ -54,7 +146,6 @@
                         <th>제목</th>
                         <th>작성자</th>
                         <th>작성일</th>
-                        <th>조회수</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -65,7 +156,6 @@
                         </td>
                         <td class="list-writer">관리자</td>
                         <td class="list-date">23-04-02</td>
-                        <td class="list-count">15</td>
                     </tr>
                     <tr>
                         <td class="list-num">1</td>
@@ -74,7 +164,6 @@
                         </td>
                         <td class="list-writer">관리자</td>
                         <td class="list-date">23-04-01</td>
-                        <td class="list-count">20</td>
                     </tr>
                     </tbody>
                 </table>
@@ -104,8 +193,18 @@
     </section>
 </div>
 
-<div class="footer">
-    <h1>FOOTER</h1>
-</div> 
+<footer>
+    <div id="footer-div">
+        <ul>
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">사이트맵</a></li>
+        </ul>
+    </div>
+    <div id="company">
+        <p >경기도 안양시 동안구 임곡로 29 전산관 (대표전화) 123-456-7890</p> 
+    </div> 
+</footer><!--푸터 end-->
 </body>
 </html>

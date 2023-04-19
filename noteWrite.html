@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/container.css" type="text/css" />
     <link rel="stylesheet" href="css/side.css" type="text/css" />
-    <link rel="stylesheet" href="css/contentsText.css" type="text/css" />
+    <link rel="stylesheet" href="css/write.css" type="text/css" />
     <title>공지사항내용2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -116,53 +116,36 @@
         <h2>게시판</h2>
         <div class="side">
             <ul class="side-menu">
-                <li class="on"><a href="alamBoard.html" >공지사항</a></li>
-                <li><a href="noteBoard.html" >자유게시판</a></li>
+                <li><a href="alamBoard.html" >공지사항</a></li>
+                <li class="on"><a href="noteBoard.html" >자유게시판</a></li>
             </ul>
         </div>
       </aside><!--사이드 메뉴 end-->
 
         <div class="box-contents">
             <div class="main-tit">
-                <h3>공지사항</h3>
+                <h3>자유게시판</h3>
             </div>
 
-            <div class="box-title">
-                <h3 class="vTitle">
-                    <strong>공지사항내용</strong>
-                </h3>
-                <div class="vInfo">
-                    <div class="nickname">
-                        <ul>
-                            <li>
-                                <span>작성자</span>
-                                관리자
-                            </li>
-                        </ul>
+            <article class="box-writer">
+                <form id="writer" action="#" method="post">
+                    <div class="writer">
+                        <div class="writer-td">
+                            <h2>글쓰기</h2>
+                            <div>
+                                <input id="subject" class="write-subject" type="text" placeholder="제목을 입력하세요." maxlength=30>
+                            </div>
+                            <div>
+                                <textarea id="textContent" class="write-text" placeholder="내용을 입력하세요."></textarea>
+                            </div>
+                        </div>
                     </div>
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <span>작성일</span>
-                                23-04-02
-                            </li>
-                        </ul>
-                    </div>
-                </div><!--상단 end-->
+                </form><!--글쓰기 end--> 
 
-                <div class="main-conts">
-                    <p>공지사항내용이 들어감</p>
-                </div>
-
-                <div class="list-btn">
-                    <button type="button" id="btn_list" class="btn_list" onclick="location.href='alamBoard.html'">목록</button>
-                </div>  
-            </div><!--메인내용 end-->
-
-            <div class="paging">
-                <span><a href="#" class="next" title="다음">다음</a></span>
-                <span><a href="#" class="last" title="마지막">이전</a></span>
-            </div><!--페이징 end-->
+                <div class="complete-btn">
+                    <button type="button" id="btn_complete" class="btn_complete">작성</button>
+                </div> 
+            </article><!--메인내용 end--> 
         </div> 
     </section>
 </div>
@@ -179,6 +162,6 @@
     <div id="company">
         <p >경기도 안양시 동안구 임곡로 29 전산관 (대표전화) 123-456-7890</p> 
     </div> 
-</footer><!--푸터 end--> 
+</footer><!--푸터 end-->
 </body>
 </html>
